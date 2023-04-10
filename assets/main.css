@@ -1,0 +1,63 @@
+@font-face {
+    font-family: kite-one;
+    src: url(./fonts/kite_one/KiteOne-Regular.ttf);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #FFF6ED;
+}
+header {
+    text-align: center;
+    padding-top: 5%;
+}
+header .logo {
+    font-size: 10rem;
+}
+header h1 {
+    font-family: kite-one, sans-serif;
+    margin: 0;
+    color: #5B9EA3;
+}
+
+h2 {
+    font-weight: 100;
+    margin: 0.5rem 0;
+    color: #283C3D;
+}
+
+main,footer {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+pre {
+    padding: 20px;
+    background: #283C3D;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+article {
+    margin: 50px 0;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    color: #C29893;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #283C3D;
+    margin: 50px 0;
+}
+
+footer {
+    margin-top: 0;
+}
