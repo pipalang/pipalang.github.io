@@ -22,12 +22,16 @@
         </header>
 
         <main>
-            <pre>
-fn main(): i32 {
-  let number = 0;
-  return number;
+            <pre>fn main(): i32 {
+  return fib(13);
 }
-            </pre>
+
+fn fib(n: i32): i32 {
+  if n &lt;= 1 {
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
+}</pre>
 
 
             <article>
@@ -41,11 +45,21 @@ fn main(): i32 {
                     <a href="mailto:~johnnyrichard/pipalang-devel+subscribe@lists.sr.ht" target="_blank">Subscribe to our Mailing list</a>
                 </div>
 
-                <hr />
             </article>
+
+            <h2>Testing it</h2>
+
+            <p>First, you need to clone and build the Pipa compiler (pipac):</p>
+
+            <pre>git clone https://git.sr.ht/~johnnyrichard/pipac
+make all</pre>
+
+            <p>Next, look at the <a href="https://git.sr.ht/~johnnyrichard/pipac/tree/master/item/examples" target="_blank">examples folder</a> and build them with pipa cli</p>
+            <pre>./pipa examples/main.pipa</pre>
         </main>
 
         <footer>
+            <hr />
             © All rights reserved under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>
         </footer>
     </body>
